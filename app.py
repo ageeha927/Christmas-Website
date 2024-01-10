@@ -12,5 +12,13 @@ def index():
 def gallery():
     return render_template('gallery.html')
 
+@app.route('/form')
+def form():
+    return render_template('form.html')
+
+@app.route('/family')
+def family():
+    return render_template('family.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
